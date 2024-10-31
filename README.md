@@ -38,12 +38,24 @@ nft_profile_generator is an application designed to create unique NFT profiles f
 - **create_users_table**: Stores user information including name, email, and password.
 - **create_nft_profiles_table**: Contains fields for NFT profile details such as title, description, image URL, and owner ID.
 - **create_transactions_table**: Records transactions related to NFT profile purchases and sales.
+- **create_collections_table**: Manages collections of NFTs created by users.
+- **create_nft_transactions_table**: Tracks transactions specifically related to NFTs.
+- **create_generator_settings_table**: Stores settings for NFT generation processes.
 
 ### Features Implemented
 - User registration and authentication.
 - NFT profile creation and management.
 - Image upload functionality for NFT profiles.
 - Basic transaction handling for NFT purchases.
+- **Collection Management**: Users can create and manage collections of NFTs.
+- **NFT Transaction Tracking**: Users can view and manage their NFT transactions.
+
+### New Controllers and Services
+- **CollectionController**: Handles requests related to NFT collections.
+- **GeneratorController**: Manages the generation of NFTs.
+- **NFTController**: Manages NFT-related operations.
+- **WalletController**: Manages user wallet interactions.
+- **Web3Service**: Provides services for interacting with Web3 functionalities.
 
 ### Future Work
 - Implementing advanced features such as NFT minting and blockchain integration.
