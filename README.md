@@ -21,6 +21,35 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## About nft_profile_generator
+
+nft_profile_generator is an application designed to create unique NFT profiles for users. It allows users to generate personalized NFT profiles that can be showcased on various platforms. The application leverages blockchain technology to ensure the authenticity and ownership of each NFT profile, making it a valuable tool for artists, collectors, and enthusiasts in the NFT space.
+
+## Application Progress
+
+### Packages Installed
+- **Laravel Framework**: The core framework for building the application.
+- **Intervention Image**: For image manipulation and processing.
+- **Laravel Sanctum**: For API token authentication.
+- **Spatie Laravel Media Library**: To manage media uploads and associations with models.
+- **Laravel Cashier**: For handling subscription billing with Stripe.
+
+### Migrations Made
+- **create_users_table**: Stores user information including name, email, and password.
+- **create_nft_profiles_table**: Contains fields for NFT profile details such as title, description, image URL, and owner ID.
+- **create_transactions_table**: Records transactions related to NFT profile purchases and sales.
+
+### Features Implemented
+- User registration and authentication.
+- NFT profile creation and management.
+- Image upload functionality for NFT profiles.
+- Basic transaction handling for NFT purchases.
+
+### Future Work
+- Implementing advanced features such as NFT minting and blockchain integration.
+- Enhancing the user interface for better user experience.
+- Adding analytics and reporting features for users to track their NFT profiles.
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
@@ -64,4 +93,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# nft_profile_generator
