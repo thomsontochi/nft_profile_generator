@@ -11,19 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nfts', function (Blueprint $table) {
+        Schema::create('collections', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->string('token_id')->nullable();
             $table->string('name');
             $table->text('description')->nullable();
-            $table->string('image_url');
-            $table->string('ipfs_hash')->nullable();
-            $table->string('metadata_url')->nullable();
             $table->string('contract_address')->nullable();
-            $table->string('owner_address')->nullable();
-            $table->enum('status', ['draft', 'pending', 'minted', 'failed'])->default('draft');
-            $table->json('attributes')->nullable();
+            $table->string('symbol')->nullable();
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }
@@ -33,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nfts');
+        Schema::dropIfExists('collections');
     }
 };
